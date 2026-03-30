@@ -4,7 +4,7 @@ void main(){
   stdout.write('Qual a distância? ');
   String? valor = stdin.readLineSync();
 
-  if(valor == null){
+  if(valor == null || valor.isEmpty){
     print('O campo de distância é obrigatório!');
     return;
   }
@@ -20,5 +20,5 @@ void main(){
     premio = 15000;
   }
 
-  
+  print('O seu Prêmio é $premio');
 }
