@@ -9,8 +9,9 @@ void main() {
     escolha = stdin.readLineSync()!;
 
     if (escolha == 's') {
-      
+      print('Continuando!');
+    } else {
+      print('Finalizando Programa.');
     }
   } while (escolha != 'n');
-
 }
